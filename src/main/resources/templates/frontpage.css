@@ -1,0 +1,28 @@
+#outer-div {
+    align-content: center;
+    width: 600px;
+    border: 3px solid #4c58ed;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+table, tr, td {
+    border: 1px solid cornflowerblue;
+    border-collapse: collapse;
+    margin: 30px;
+    height: 100%;
+    flex-grow: 1;
+}
+
+p {
+    text-align: center;
+}
+

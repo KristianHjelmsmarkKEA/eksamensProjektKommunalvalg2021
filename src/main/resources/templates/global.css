@@ -1,0 +1,10 @@
+body {
+    background-color: cornflowerblue;
+    font-family: Clashgrotesk,Verdana,sans-serif;
+    line-height: 1.5rem;
+}
+
+button {
+    border-radius: 14px;
+    background-color: lightskyblue;
+}

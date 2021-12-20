@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kommunevalg 2021</title>
+    <script src="./global.js"></script>
+    <script src="./lib/HTMLEscape.js"></script>
+    <link  href="./global.css" rel="stylesheet"><link>
+    <link  href="./frontpage.css" rel="stylesheet"><link>
+</head>
+<body>
+
+<div id="outer-div">
+    <p>Commune candidates and respective parties from: furesø kommune, zipcode: 3500 - 2021.</p>
+    <a href="voteAfterMath.html"><button id="see-result-page">See vote results</button></a>
+
+    <table id="candidate-table">
+        <thead>
+        <tr>
+            <th><input type="text" id="name-and-candidate-search" onkeyup="searchFunction()" placeholder="Search for names or party.." title="Type here"></th>
+        </tr>
+        <tr>
+            <th>Candidates</th>
+            <th>Party</th>
+        </tr>
+
+        </thead>
+        <tbody id="candidate-table-tbody">
+        <tr>
+            <td>
+                <input class="input-name" placeholder="Candidate name" id="new-candidate-name">
+            </td>
+            <td>
+                <select id="party-dropdown">
+                    <option value="1">Socialdemokratiet</option>
+                    <option value="2">Radikale Venstre</option>
+                    <option value="3">Den Konservative Folkeparty</option>
+                    <option value="4">Nye Borgerlige</option>
+                    <option value="5">SF - Socialistisk Folkeparty</option>
+                    <option value="6">Liberal Alliance</option>
+                    <option value="7">Dansk Folkeparti</option>
+                    <option value="8">Venstre, Danmarks Liberale Parti</option>
+                    <option value="9">Frihedslisten</option>
+                    <option value="10">Enhedslisten - De Rød-Grønne</option>
+                    <option value="11">Alternativet</option>
+                </select>
+            </td>
+            <td>
+                <a href="index.html"><button id="add-new-candidate" onclick="addNewCandidate()">Add new candidate➕</button></a>
+            </td>
+        </tbody>
+    </table>
+</div>
+
+
+<script src="./candidates.js"></script>
+<script src="./updateCandidateInformation.js"></script>
+
+</body>
+</html>
