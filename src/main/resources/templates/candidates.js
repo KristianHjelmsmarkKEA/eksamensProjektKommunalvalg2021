@@ -26,10 +26,10 @@ function createCandidateTableRow(candidate) {
 function constructCandidateTableRow(candidateTableRow, candidate) {
     candidateTableRow.innerHTML = `
     <td>
-    <a class="a-candidate-name">${candidate.name}</a>
+    <a class="a-candidate-name">${escapeHTML(candidate.name)}</a>
     </td>
     <td>
-    <a class="a-candidate-party">${candidate.party.partyName}</a>
+    <a class="a-candidate-party">${escapeHTML(candidate.party.partyName)}</a>
     </td>
     <td>
      <button id="update-button-${candidate.id}">Update</button>

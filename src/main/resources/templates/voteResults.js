@@ -19,13 +19,13 @@ function createVoteResultTableRow(parties) {
 function constructVoteResultTableRow(voteResultTableRow, parties) {
     voteResultTableRow.innerHTML = `
     <td>
-    <a class="a-party-name">${parties.partyName}</a>
+    <a class="a-party-name">${escapeHTML(parties.partyName)}</a>
     </td>
     <td>
-    <a class="a-party-votes">${parties.votes.toString()}</a>
+    <a class="a-party-votes">${escapeHTML(parties.votes.toString())}</a>
     </td>
     <td>
-       <p id="percentage">${((100* parties.votes) / totalVotes).toFixed(2)}</p>
+       <p id="percentage">${escapeHTML(((100* parties.votes) / totalVotes).toFixed(2))}</p>
     </td>
     `;
 }
